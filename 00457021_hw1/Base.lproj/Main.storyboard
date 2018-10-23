@@ -1,24 +1,1010 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mv9-PG-Jub">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--動畫簡介-->
+        <scene sceneID="8XZ-hp-W3U">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Bd-xs-tNU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="動畫簡介" image="按鈕2" id="fMb-c3-ToX"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="A28-lw-dsc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="H97-v8-Fc6" kind="relationship" relationship="rootViewController" id="MjQ-h3-cZO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oDT-vH-hm5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1282" y="719"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="E6E-v4-Cgb">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="mv9-PG-Jub" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="KI4-jI-fSW"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="meh-QW-6tb"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tU9-8Z-ZmK">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.99906724690000004" green="0.1423699558" blue="0.4941865802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="rjk-Nm-b3u" kind="relationship" relationship="viewControllers" id="trI-ww-ma8"/>
+                        <segue destination="2Bd-xs-tNU" kind="relationship" relationship="viewControllers" id="DTg-dY-EV0"/>
+                        <segue destination="5aM-qf-XMd" kind="relationship" relationship="viewControllers" id="sUW-da-nef"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hMM-eG-Vp1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2065" y="719"/>
+        </scene>
+        <!--圖片庫-->
+        <scene sceneID="VtU-vg-ypo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5aM-qf-XMd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="圖片庫" image="按鈕3" id="SLp-39-ixw"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="PpT-3T-dXc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KIl-1C-6ZR" kind="relationship" relationship="rootViewController" id="24S-wj-Yeu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXq-DW-872" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1282" y="1384"/>
+        </scene>
+        <!--♥ 圖片庫 ♥-->
+        <scene sceneID="lxF-j1-YFW">
+            <objects>
+                <viewController id="KIl-1C-6ZR" customClass="ViewController" customModule="_0457021_hw1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J46-vP-Dhc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="龍貓3" translatesAutoresizingMaskIntoConstraints="NO" id="8wY-ew-DLP">
+                                <rect key="frame" x="0.0" y="145" width="414" height="291"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EJc-Sv-NA0">
+                                <rect key="frame" x="87" y="482" width="240" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRz-LV-Hl6">
+                                        <rect key="frame" x="55" y="-2" width="130" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="天空之城">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="VJ0-uy-ukx" kind="show" id="OQD-m1-Q8S"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.31365471210000001" blue="0.43337472510000002" alpha="0.53500047930000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j4g-cj-rKk">
+                                <rect key="frame" x="87" y="544" width="240" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6M-eB-TIP">
+                                        <rect key="frame" x="57" y="-2" width="126" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="神隱少女">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="9nE-Uk-Me3" kind="show" id="uU0-Il-bmN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.92537715519999997" green="0.53409990159999998" blue="0.28380475309999997" alpha="0.5042168387" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Upf-8b-1MW">
+                                <rect key="frame" x="87" y="724" width="240" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgG-DJ-xyj">
+                                        <rect key="frame" x="33" y="-4" width="175" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="魔女宅急便">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="fw3-2f-Veb" kind="show" id="ojl-17-Ms5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.86696214319999998" green="0.64015035710000001" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t0U-Fj-iMM">
+                                <rect key="frame" x="87" y="606" width="240" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grT-pr-O7L">
+                                        <rect key="frame" x="8" y="-2" width="224" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="霍爾的移動城堡">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="iuW-Gr-UCn" kind="show" id="Wov-56-uaq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.51824746629999996" green="0.86126077590000005" blue="0.73754738139999998" alpha="0.65402932363013699" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rx5-W7-Vc1">
+                                <rect key="frame" x="87" y="664" width="240" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVm-RA-Ytq">
+                                        <rect key="frame" x="41" y="-2" width="159" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="龍貓">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="UjK-4V-Wjt" kind="show" id="zlm-jQ-ThW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.64608259219999997" green="0.83184754080000001" blue="0.99942404029999998" alpha="0.5936964897260274" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.72971717540000003" blue="0.74008194189999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="jnP-Ht-NxA"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="♥ 圖片庫 ♥" id="cfY-b1-fn4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iQ3-ja-4Rw" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-600" y="1383"/>
+        </scene>
+        <!--霍爾的移動城堡-->
+        <scene sceneID="Zjs-zX-3Dv">
+            <objects>
+                <viewController id="iuW-Gr-UCn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QWp-VU-ySq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9xb-SH-bSV">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="霍爾的移動城堡3" translatesAutoresizingMaskIntoConstraints="NO" id="2Qc-re-qOD">
+                                        <rect key="frame" x="8" y="247" width="398" height="212"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="霍爾的移動城堡2" translatesAutoresizingMaskIntoConstraints="NO" id="osU-e7-xDe">
+                                        <rect key="frame" x="8" y="474" width="398" height="231"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="霍爾的移動城堡" translatesAutoresizingMaskIntoConstraints="NO" id="peO-sj-2F2">
+                                        <rect key="frame" x="8" y="18" width="398" height="212"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.51824746629999996" green="0.86126077590000005" blue="0.73754738139999998" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="70L-Mf-7Jp"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="霍爾的移動城堡" id="pCh-6E-yQX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lad-tT-IQh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1418.840579710145" y="1382.8125"/>
+        </scene>
+        <!--神隱少女-->
+        <scene sceneID="Dt0-Se-eHE">
+            <objects>
+                <viewController id="9nE-Uk-Me3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0y6-Ud-Gmm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZSM-Ip-mn1">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="神隱少女4" translatesAutoresizingMaskIntoConstraints="NO" id="TbH-xw-tm1">
+                                        <rect key="frame" x="7" y="492" width="401" height="213"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="神隱少女3" translatesAutoresizingMaskIntoConstraints="NO" id="V29-VQ-pr3">
+                                        <rect key="frame" x="11" y="251" width="389" height="216"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="神隱少女2" translatesAutoresizingMaskIntoConstraints="NO" id="ygE-6N-qnE">
+                                        <rect key="frame" x="11" y="22" width="393" height="209"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.92537715519999997" green="0.53409990159999998" blue="0.28380475309999997" alpha="0.5042168387" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="JvJ-Y9-4KT"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="神隱少女" id="wLI-yo-15k"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KqB-sI-AuM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="786.95652173913049" y="1383.4821428571429"/>
+        </scene>
+        <!--首頁-->
+        <scene sceneID="t6G-zI-Ygb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rjk-Nm-b3u" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首頁" image="按鈕1" id="XDA-Go-2Rj"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="cAV-Xw-gqc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="idg-xl-Ee9" kind="relationship" relationship="rootViewController" id="ciY-jf-cht"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0rt-v0-Rsv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1283" y="51"/>
+        </scene>
+        <!--宮崎駿工作室-->
+        <scene sceneID="pug-wh-vgl">
+            <objects>
+                <viewController id="idg-xl-Ee9" customClass="ViewController" customModule="_0457021_hw1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hzq-Nf-lhm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="魔女宅急便2" translatesAutoresizingMaskIntoConstraints="NO" id="WVv-dv-62B">
+                                <rect key="frame" x="0.0" y="194" width="414" height="215"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fLE-sL-62A">
+                                <rect key="frame" x="95" y="684" width="224" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVR-zD-07j">
+                                        <rect key="frame" x="34" y="9" width="157" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="♥ 圖片庫 ♥">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="KIl-1C-6ZR" kind="show" id="nWZ-ev-12c"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.31365471210000001" blue="0.43337472510000002" alpha="0.53500047930000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lHN-zO-ehy">
+                                <rect key="frame" x="95" y="598" width="224" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJ8-pb-qoI">
+                                        <rect key="frame" x="15" y="11" width="194" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="♥ 動畫簡介 ♥">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="H97-v8-Fc6" kind="show" id="wt7-Ae-mAK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.31365471210000001" blue="0.43337472510000002" alpha="0.53500047930000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="➣ 宮崎駿 ➢" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQF-j3-4Qx">
+                                <rect key="frame" x="40" y="456" width="334" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="59"/>
+                                <color key="textColor" red="0.94117647059999998" green="0.30638704999999999" blue="0.50624737379999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.72971717542365966" blue="0.74008194187985377" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Pyp-JE-4D0"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="宮崎駿工作室" id="OEC-Q0-9mv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2U1-NZ-rkT" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-600" y="50.892857142857139"/>
+        </scene>
+        <!--魔女宅急便-->
+        <scene sceneID="RYN-Fz-9cX">
+            <objects>
+                <viewController id="fw3-2f-Veb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UiB-AG-a9p">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6J5-K9-xH1">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="魔女宅急便4" translatesAutoresizingMaskIntoConstraints="NO" id="7Fb-0J-WAb">
+                                        <rect key="frame" x="11" y="495" width="393" height="209"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="魔女宅急便3" translatesAutoresizingMaskIntoConstraints="NO" id="2Zo-RT-gvo">
+                                        <rect key="frame" x="11" y="262" width="393" height="209"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="魔女宅急便" translatesAutoresizingMaskIntoConstraints="NO" id="Y7g-GP-qlY">
+                                        <rect key="frame" x="11" y="16" width="393" height="225"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.86696214319999998" green="0.64015035710000001" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="FJU-uy-RKR"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="魔女宅急便" id="8gg-fe-VCh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yad-Na-SqU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2669.5652173913045" y="1382.8125"/>
+        </scene>
+        <!--龍貓-->
+        <scene sceneID="Dly-le-31n">
+            <objects>
+                <viewController id="UjK-4V-Wjt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zst-Fa-83G">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Lj-Km-sR7">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="龍貓4" translatesAutoresizingMaskIntoConstraints="NO" id="LOT-cj-7m1">
+                                        <rect key="frame" x="11" y="253" width="393" height="218"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="龍貓" translatesAutoresizingMaskIntoConstraints="NO" id="4Jz-Wf-qcu">
+                                        <rect key="frame" x="11" y="18" width="393" height="220"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="龍貓3" translatesAutoresizingMaskIntoConstraints="NO" id="VT7-5M-ghD">
+                                        <rect key="frame" x="12" y="492" width="391" height="216"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.64608259219999997" green="0.83184754080000001" blue="0.99942404029999998" alpha="0.51591930648082196" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="5v4-Wc-yep"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="龍貓" id="KrT-mf-jBo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pxt-at-waq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2044.9275362318842" y="1382.8125"/>
+        </scene>
+        <!--神隱少女-->
+        <scene sceneID="8Ap-n1-JWZ">
+            <objects>
+                <viewController id="VJ0-uy-ukx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DXJ-Xk-j7e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dsu-xw-Jlr">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="天空之城" translatesAutoresizingMaskIntoConstraints="NO" id="lEI-3v-hip">
+                                        <rect key="frame" x="7" y="17" width="400" height="221"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="天空之城3" translatesAutoresizingMaskIntoConstraints="NO" id="ork-hR-FTp">
+                                        <rect key="frame" x="9" y="490" width="398" height="217"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="天空之城2" translatesAutoresizingMaskIntoConstraints="NO" id="Ryb-gv-nPp">
+                                        <rect key="frame" x="8" y="253" width="398" height="220"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.4690169642" blue="0.57233008819999998" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="JOp-RL-9kP"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="神隱少女" id="66q-bu-h08"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xg0-Uz-aS2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="155.07246376811597" y="1382.8125"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="BPi-ye-YsE">
+            <objects>
+                <tableViewController id="gtO-M8-S2L" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gGA-TU-wsJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="separatorColor" red="0.8055514252" green="1" blue="0.99140285439999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <sections>
+                            <tableViewSection id="n6O-LO-1Vv">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="157" id="mOH-ps-72L">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="157"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mOH-ps-72L" id="mEK-iI-sAc">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="156.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="天空之城" translatesAutoresizingMaskIntoConstraints="NO" id="LVw-YV-mnD">
+                                                    <rect key="frame" x="20" y="29" width="170" height="100"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eih-VR-JTW">
+                                                    <rect key="frame" x="230" y="58" width="136" height="42"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36E-cA-FcO">
+                                                            <rect key="frame" x="3" y="0.0" width="130" height="44"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                            <state key="normal" title="天空之城">
+                                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </state>
+                                                            <connections>
+                                                                <segue destination="B06-eO-DXI" kind="show" id="Fhh-IN-cvb"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="1" green="0.31365471210000001" blue="0.43337472510000002" alpha="0.53500047930000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.4690169642" blue="0.57233008819999998" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="157" id="Tjx-WN-h3b">
+                                        <rect key="frame" x="0.0" y="157" width="414" height="157"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tjx-WN-h3b" id="6VH-8k-bqG">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="156.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="神隱少女" translatesAutoresizingMaskIntoConstraints="NO" id="7Wo-Rt-bUC">
+                                                    <rect key="frame" x="20" y="28" width="170" height="100"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NIp-Ko-YLr">
+                                                    <rect key="frame" x="232" y="57" width="136" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxX-dZ-jWf">
+                                                            <rect key="frame" x="5" y="-1" width="126" height="44"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                            <state key="normal" title="神隱少女">
+                                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </state>
+                                                            <connections>
+                                                                <segue destination="ZiD-rm-bkp" kind="show" id="pA2-1Y-XAv"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.92537715519999997" green="0.53409990159999998" blue="0.28380475309999997" alpha="0.5042168387" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.92537715519999997" green="0.53409990159999998" blue="0.28380475309999997" alpha="0.5042168387" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="157" id="4m5-Y6-wgb">
+                                        <rect key="frame" x="0.0" y="314" width="414" height="157"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4m5-Y6-wgb" id="uec-1f-ZOL">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="156.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Idv-de-Coo">
+                                                    <rect key="frame" x="194" y="58" width="220" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75P-vI-shH">
+                                                            <rect key="frame" x="3" y="-1" width="214" height="42"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                            <state key="normal" title="霍爾的移動城堡">
+                                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </state>
+                                                            <connections>
+                                                                <segue destination="Ske-n5-yXf" kind="show" id="lbV-yk-X3b"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.51824746629999996" green="0.86126077590000005" blue="0.73754738139999998" alpha="0.65402932359999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="霍爾的移動城堡" translatesAutoresizingMaskIntoConstraints="NO" id="blJ-71-OzE">
+                                                    <rect key="frame" x="20" y="28" width="170" height="100"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.51824746629999996" green="0.86126077590000005" blue="0.73754738139999998" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="157" id="R8t-Zc-EBR">
+                                        <rect key="frame" x="0.0" y="471" width="414" height="157"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="R8t-Zc-EBR" id="ojY-P6-qtl">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="156.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="龍貓2" translatesAutoresizingMaskIntoConstraints="NO" id="5Fe-ez-Fzp">
+                                                    <rect key="frame" x="20" y="28" width="170" height="100"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g3q-kS-oXN">
+                                                    <rect key="frame" x="246" y="57" width="101" height="42"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3q-lR-QLr">
+                                                            <rect key="frame" x="10" y="0.0" width="80" height="44"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                            <state key="normal" title="龍貓">
+                                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </state>
+                                                            <connections>
+                                                                <segue destination="RAX-gX-sz7" kind="show" id="mTe-On-xxr"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.64608259219999997" green="0.83184754080000001" blue="0.99942404029999998" alpha="0.5936964897" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.64608259219999997" green="0.83184754080000001" blue="0.99942404029999998" alpha="0.51591930649999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="157" id="eqe-5V-Rop">
+                                        <rect key="frame" x="0.0" y="628" width="414" height="157"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eqe-5V-Rop" id="XWI-Nr-LNG">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="156.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="魔女宅急便" translatesAutoresizingMaskIntoConstraints="NO" id="R9s-Wb-XlF">
+                                                    <rect key="frame" x="20" y="28" width="170" height="100"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i79-qO-bCu">
+                                                    <rect key="frame" x="217" y="58" width="177" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fy-FL-JIo">
+                                                            <rect key="frame" x="2" y="-4" width="175" height="48"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                            <state key="normal" title="魔女宅急便">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                            <connections>
+                                                                <segue destination="n8b-Zo-P2N" kind="show" id="R38-gy-dv9"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.86696214319999998" green="0.64015035710000001" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.86696214319999998" green="0.64015035710000001" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="gtO-M8-S2L" id="lZd-kN-4xU"/>
+                            <outlet property="delegate" destination="gtO-M8-S2L" id="uPZ-HL-ZOj"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6OG-xl-MOi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="154" y="719"/>
+        </scene>
+        <!--♥ 動畫簡介 ♥-->
+        <scene sceneID="NEo-rP-uRH">
+            <objects>
+                <viewController id="H97-v8-Fc6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5iF-Pv-XUe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UWm-Th-gDd">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="gtO-M8-S2L" kind="embed" id="1R4-be-NQS"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.72971717540000003" blue="0.74008194189999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="PC8-jO-dFg"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="♥ 動畫簡介 ♥" id="sH2-ON-b4U"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RkX-Rh-cfX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-600" y="718.52678571428567"/>
+        </scene>
+        <!--天空之城-->
+        <scene sceneID="DN3-be-5sw">
+            <objects>
+                <viewController title="天空之城" id="B06-eO-DXI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ooF-ew-QXp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vfV-MU-Gz0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="828"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="天空之城" translatesAutoresizingMaskIntoConstraints="NO" id="NaC-5u-yKp">
+                                        <rect key="frame" x="7" y="126" width="400" height="221"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zU-Mq-Ih9">
+                                        <rect key="frame" x="36" y="383" width="342" height="403"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">在過去的歷史之中，傳說著曾有人類以高科技創造了可飛行於天空的城市－雷泊特。雖多數認為這是虛構幻想出來的事物，但仍有相信飛行城市存在而試圖尋找出的人們。
+某一日晚上，搭載眾多旅客的飛行客船突遭到空中海盜團的襲擊和入侵，空中海盜的目標是搭乘飛行船的一位名叫希達的少女身上所攜帶與飛行城市傳說相關的物品「飛行石」。
+巴魯與希達為了搶回飛行石並阻止穆斯卡的企圖，於是搭上了朵拉一族的飛行船一同前往拉普達－傳說的天空之城。</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="textColor" red="0.97254901959999995" green="0.074119281897717451" blue="0.38522445112985332" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.4690169642" blue="0.57233008819999998" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="mRC-7a-Ejt"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="神隱少女" id="8xg-EJ-LUi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AoG-J5-Wgk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1418.840579710145" y="79.6875"/>
+        </scene>
+        <!--天空之城-->
+        <scene sceneID="drW-SM-O6r">
+            <objects>
+                <viewController title="天空之城" id="ZiD-rm-bkp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qM7-To-hBH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y0l-op-d47">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="828"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="神隱少女" translatesAutoresizingMaskIntoConstraints="NO" id="CNS-Sk-hiw">
+                                        <rect key="frame" x="7" y="126" width="400" height="221"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ic-gh-OCk">
+                                        <rect key="frame" x="36" y="383" width="342" height="403"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <mutableString key="text">年僅10歲的荻野千尋是一位普通的四年級小學生，她正隨著父母搬家到一個陌生的城鎮，準備開始全新的生活。途中，千尋和父母因迷路，誤闖入一個人類不應進入的靈異小鎮。
+小鎮中有一棟供各方眾神泡澡歇憩、名為「油屋」的澡堂，由一名稱做「湯婆婆」的魔女所持有。之後在小鎮裡千尋的父母由於一時貪吃，於未經允許的情況下隨意享用一間餐館裡的食物，而湯婆婆將兩人變成了豬，作為懲罰。
+在父母已變成豬、且必須設法在異世界裡存活下來的情況下，千尋藉由湯婆婆的少年助手「白龍」暗中幫助而進入油屋，成功獲得了在裏頭工作的資格。
+而她之後為了拯救父母和幫助過自己的白龍，將面對各種困難和危險；她的心理也隨著歷程而展開變化。</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="0.97254901959999995" green="0.14105923139490631" blue="0.078451131874163749" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.92537715519999997" green="0.53409990159999998" blue="0.28380475309999997" alpha="0.5042168387" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="jSS-qi-tDN"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="神隱少女" id="7MW-5j-Nh2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HD0-L9-xsN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2045" y="80"/>
+        </scene>
+        <!--天空之城-->
+        <scene sceneID="8u2-g5-qYR">
+            <objects>
+                <viewController title="天空之城" id="Ske-n5-yXf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q3n-dN-br2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="em7-aU-SG5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="828"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="霍爾的移動城堡" translatesAutoresizingMaskIntoConstraints="NO" id="p1w-ev-xcx">
+                                        <rect key="frame" x="7" y="126" width="400" height="221"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6t-re-XdL">
+                                        <rect key="frame" x="36" y="383" width="342" height="403"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">在19世紀的歐洲世界，史柏麗王國裡出現了一座會移動的城堡。
+蘇菲前往探望在工作的蕾蒂，被軍官搭訕，蘇菲不知該如何擺脫時冒出了霍爾搭救。
+蘇菲遇見荒野女巫。當女巫得知霍爾與蘇菲見面時，為了報復蘇菲，對她下了變老的詛咒。
+變老的蘇菲決定離家出走。在路上蘇菲救了稻草人，稻草人為蘇菲引來了霍爾的移動城堡。</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.18360439613186907" green="0.47406740837696337" blue="0.31724947887336735" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.51824746629999996" green="0.86126077590000005" blue="0.73754738139999998" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Wcw-R4-FL8"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="神隱少女" id="L7Z-8X-MCd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="taD-8r-gFW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2670" y="80"/>
+        </scene>
+        <!--天空之城-->
+        <scene sceneID="Seu-sh-cv5">
+            <objects>
+                <viewController title="天空之城" id="RAX-gX-sz7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pby-df-ahW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WUK-1M-xmP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="828"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="龍貓2" translatesAutoresizingMaskIntoConstraints="NO" id="Ilc-y0-r3L">
+                                        <rect key="frame" x="7" y="126" width="400" height="221"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yuo-Jh-qqI">
+                                        <rect key="frame" x="36" y="383" width="342" height="403"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <mutableString key="text">一位大學教授和他的兩個女兒皋月、梅搬進一個森林附近的一所舊房子，而教授的妻子草壁靖子因染上了結核病，在附近的一所醫院養病中。
+搬來新家的皋月和梅都在家中及附近發現各種奇妙的東西，如家裡藏著像是小黑球模樣的灰塵精靈。而梅某一天也在外頭發現可以將外表變不見小龍貓、為了追趕它而被引領到樹洞裡發現森林的守護者大龍貓。
+之後有一天從醫院得知媽媽的病情惡化，梅想把一個成熟的玉米帶給媽媽時不小心迷了路，當眾人都遍尋不著後，皋月跑去找大龍貓幫忙。大龍貓召喚了貓巴士，在貓巴士的幫助下，梅被迅速找到了，並且接送皋月和梅穿過鄉間到醫院探望她們的媽媽。</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="textColor" red="0.060075384246183854" green="0.39618220454784864" blue="0.91539185209424079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.64608259219999997" green="0.83184754080000001" blue="0.99942404029999998" alpha="0.51591930649999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="4Wo-hF-EiZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="神隱少女" id="rcI-an-ren"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c6r-GS-Ip9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1419" y="719"/>
+        </scene>
+        <!--天空之城-->
+        <scene sceneID="xTA-Ka-CJR">
+            <objects>
+                <viewController title="天空之城" id="n8b-Zo-P2N" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ijP-uE-PLf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gqa-g1-wYR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="828"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="魔女宅急便" translatesAutoresizingMaskIntoConstraints="NO" id="FW0-ND-JZA">
+                                        <rect key="frame" x="7" y="126" width="400" height="221"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdH-cK-2dE">
+                                        <rect key="frame" x="36" y="383" width="342" height="403"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <mutableString key="text">琪琪是一個實習魔女。依家族慣例，13歲的琪琪該離開家鄉，到新的城市展開獨立生活，修行成正式的魔女。她用她媽媽的掃帚，帶著她的同伴黑貓吉吉去開展她的新生活。 琪琪遷入了美麗的城市克里克。起初她不能適應城市的生活節奏，在麵包店女店主索娜的幫助下，琪琪用掃帚飛行的專長，開了一家速遞公司。後來琪琪也經歷了一些挫折也成長了很多，她必須獨自面對孤獨、憂慮和思鄉的情緒。
+有一天，琪琪因為心情鬱悶、對自己的行為感到疑惑時失去了法力。最終琪琪在她的新朋友畫家的幫助下，克服了這些障礙。在一次飛船的意外裏，琪琪為了拯救她的朋友蜻蜓(科普利)，在千鈞一髮之際恢復了飛行的能力，並救了他。</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="0.47513434854856312" green="0.22360748278650888" blue="0.88467359293193715" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.86696214319999998" green="0.64015035710000001" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="7hD-vM-0Rb"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="神隱少女" id="nuX-Kd-5ml"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dpU-fh-4Ah" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2045" y="719"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="天空之城" width="600" height="354"/>
+        <image name="天空之城2" width="1920" height="1080"/>
+        <image name="天空之城3" width="580" height="363"/>
+        <image name="按鈕1" width="54" height="42"/>
+        <image name="按鈕2" width="48" height="43"/>
+        <image name="按鈕3" width="48" height="59"/>
+        <image name="神隱少女" width="800" height="450"/>
+        <image name="神隱少女2" width="1000" height="540"/>
+        <image name="神隱少女3" width="611" height="404"/>
+        <image name="神隱少女4" width="1772" height="998"/>
+        <image name="霍爾的移動城堡" width="800" height="437"/>
+        <image name="霍爾的移動城堡2" width="600" height="400"/>
+        <image name="霍爾的移動城堡3" width="600" height="337"/>
+        <image name="魔女宅急便" width="640" height="400"/>
+        <image name="魔女宅急便2" width="1600" height="873"/>
+        <image name="魔女宅急便3" width="1025" height="576"/>
+        <image name="魔女宅急便4" width="450" height="252.75"/>
+        <image name="龍貓" width="2880" height="1800"/>
+        <image name="龍貓2" width="1280" height="720"/>
+        <image name="龍貓3" width="705" height="487.5"/>
+        <image name="龍貓4" width="1920" height="1080"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="wt7-Ae-mAK"/>
+        <segue reference="nWZ-ev-12c"/>
+    </inferredMetricsTieBreakers>
 </document>
